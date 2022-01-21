@@ -16,6 +16,10 @@
 		EF9067AD279A5BBF003B9E75 /* StandardCombineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9067AC279A5BBF003B9E75 /* StandardCombineTests.swift */; };
 		EF9067B7279A5BBF003B9E75 /* StandardCombineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9067B6279A5BBF003B9E75 /* StandardCombineUITests.swift */; };
 		EF9067B9279A5BBF003B9E75 /* StandardCombineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9067B8279A5BBF003B9E75 /* StandardCombineUITestsLaunchTests.swift */; };
+		EF9067C8279A5C7D003B9E75 /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9067C7279A5C7D003B9E75 /* TimerController.swift */; };
+		EF9067CB279A77E5003B9E75 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9067CA279A77E5003B9E75 /* TimerViewController.swift */; };
+		EF9067CF279ABECF003B9E75 /* PrintWhenDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9067CE279ABECF003B9E75 /* PrintWhenDebug.swift */; };
+		EF9067D1279ABEFB003B9E75 /* AssignToPassthoughSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9067D0279ABEFB003B9E75 /* AssignToPassthoughSubject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		EF9067B2279A5BBF003B9E75 /* StandardCombineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StandardCombineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9067B6279A5BBF003B9E75 /* StandardCombineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardCombineUITests.swift; sourceTree = "<group>"; };
 		EF9067B8279A5BBF003B9E75 /* StandardCombineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardCombineUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EF9067C7279A5C7D003B9E75 /* TimerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
+		EF9067CA279A77E5003B9E75 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		EF9067CE279ABECF003B9E75 /* PrintWhenDebug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintWhenDebug.swift; sourceTree = "<group>"; };
+		EF9067D0279ABEFB003B9E75 /* AssignToPassthoughSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignToPassthoughSubject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		EF906794279A5BBE003B9E75 /* StandardCombine */ = {
 			isa = PBXGroup;
 			children = (
+				EF9067C5279A5BCE003B9E75 /* Sample */,
 				EF906795279A5BBE003B9E75 /* AppDelegate.swift */,
 				EF906797279A5BBE003B9E75 /* SceneDelegate.swift */,
 				EF906799279A5BBE003B9E75 /* ViewController.swift */,
@@ -125,6 +134,49 @@
 				EF9067B8279A5BBF003B9E75 /* StandardCombineUITestsLaunchTests.swift */,
 			);
 			path = StandardCombineUITests;
+			sourceTree = "<group>";
+		};
+		EF9067C5279A5BCE003B9E75 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				EF9067CC279ABEAA003B9E75 /* Extension */,
+				EF9067C9279A77B0003B9E75 /* ViewController */,
+				EF9067C6279A5BD7003B9E75 /* Model */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		EF9067C6279A5BD7003B9E75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF9067C7279A5C7D003B9E75 /* TimerController.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF9067C9279A77B0003B9E75 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EF9067CA279A77E5003B9E75 /* TimerViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		EF9067CC279ABEAA003B9E75 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EF9067CD279ABEBF003B9E75 /* Combine */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EF9067CD279ABEBF003B9E75 /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				EF9067CE279ABECF003B9E75 /* PrintWhenDebug.swift */,
+				EF9067D0279ABEFB003B9E75 /* AssignToPassthoughSubject.swift */,
+			);
+			path = Combine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +310,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF9067CB279A77E5003B9E75 /* TimerViewController.swift in Sources */,
+				EF9067D1279ABEFB003B9E75 /* AssignToPassthoughSubject.swift in Sources */,
+				EF9067CF279ABECF003B9E75 /* PrintWhenDebug.swift in Sources */,
 				EF90679A279A5BBE003B9E75 /* ViewController.swift in Sources */,
+				EF9067C8279A5C7D003B9E75 /* TimerController.swift in Sources */,
 				EF906796279A5BBE003B9E75 /* AppDelegate.swift in Sources */,
 				EF906798279A5BBE003B9E75 /* SceneDelegate.swift in Sources */,
 			);
